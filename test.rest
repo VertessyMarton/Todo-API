@@ -9,3 +9,12 @@ Content-Type: application/json
     "username": "",
     "password": ""
 }
+
+###
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "jani@gmail.com",
+    "password": "123123213"
+}
