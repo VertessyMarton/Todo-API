@@ -1,3 +1,5 @@
+@token = eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcxNDMwMTgzLCJleHAiOjE3NzE0MzM3ODN9.J2hCffDidSi-w82qlCvzhGkjXwf5JxvECdimHW1Vrh4
+
 ### GET /
 GET http://localhost:3000
 
@@ -18,3 +20,7 @@ Content-Type: application/json
     "username": "jani@gmail.com",
     "password": "123123213"
 }
+
+###
+GET http://localhost:3000/todos
+Authorization: Bearer {{token}}
