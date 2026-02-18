@@ -1,4 +1,4 @@
-@token = eeyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcxNDMwMTgzLCJleHAiOjE3NzE0MzM3ODN9.J2hCffDidSi-w82qlCvzhGkjXwf5JxvECdimHW1Vrh4
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcxNDM4MzA3LCJleHAiOjE3NzE0NDE5MDd9.iq92h2DgIVdXqM-4iHs8P-uxkvOxH2VdkEwvagEc0_8
 
 ### GET /
 GET http://localhost:3000
@@ -8,7 +8,7 @@ POST http://localhost:3000/auth/register
 Content-Type: application/json
 
 {
-    "username": "jani@gmail.com",
+    "username": "vertessymarton",
     "password": "123123213"
 }
 
@@ -17,10 +17,32 @@ POST http://localhost:3000/auth/login
 Content-Type: application/json
 
 {
-    "username": "jani@gmail.com",
+    "username": "vertessymarton",
     "password": "123123213"
 }
 
 ###
 GET http://localhost:3000/todos
+Authorization: Bearer {{token}}
+
+###
+POST http://localhost:3000/todos
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "task": "Finish the project"
+}
+
+###
+PUT http://localhost:3000/todos/2
+Authorization: Bearer {{token}}
+Content-Type: application/json
+
+{
+    "completed": true
+}
+
+###
+DELETE http://localhost:3000/todos/3
 Authorization: Bearer {{token}}
