@@ -1,6 +1,4 @@
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcxNDM4MzA3LCJleHAiOjE3NzE0NDE5MDd9.iq92h2DgIVdXqM-4iHs8P-uxkvOxH2VdkEwvagEc0_8
-
-### GET /
+@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcxNTE0MDM3LCJleHAiOjE3NzE1MTc2Mzd9.wzE9AMakeApvRkrLoGxT_PZKzOHm9qHmyZMQLWW3UJs
 GET http://localhost:3000
 
 ### POST /
@@ -25,7 +23,7 @@ Content-Type: application/json
 GET http://localhost:3000/todos
 Authorization: Bearer {{token}}
 
-###
+###y
 POST http://localhost:3000/todos
 Authorization: Bearer {{token}}
 Content-Type: application/json
@@ -44,5 +42,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/todos/3
+DELETE http://localhost:3000/todos/1
 Authorization: Bearer {{token}}
