@@ -1,4 +1,6 @@
-@token = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzcxNzMwOTY2LCJleHAiOjE3NzE3MzQ1NjZ9.qVKBwSnpP9gcYCMTzc3yJlgJd2gnSwamlzVIJ97aSmY
+###
+@token = {{login.response.body.token}}
+
 GET http://localhost:3000
 
 ### POST /
@@ -11,6 +13,7 @@ Content-Type: application/json
 }
 
 ###
+# @name login
 POST http://localhost:3000/auth/login
 Content-Type: application/json
 
@@ -33,7 +36,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:3000/todos/2
+PUT http://localhost:3000/todos/3
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
