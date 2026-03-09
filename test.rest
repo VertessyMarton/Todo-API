@@ -9,7 +9,8 @@ Content-Type: application/json
 
 {
     "username": "vertessymarton",
-    "password": "123123213"
+    "password": "123123213",
+    "confirmPassword": "123123213"
 }
 
 ###
@@ -26,7 +27,7 @@ Content-Type: application/json
 GET http://localhost:3000/todos
 Authorization: Bearer {{token}}
 
-###y
+###
 POST http://localhost:3000/todos
 Authorization: Bearer {{token}}
 Content-Type: application/json
@@ -36,7 +37,7 @@ Content-Type: application/json
 }
 
 ###
-PUT http://localhost:3000/todos/3
+PUT http://localhost:3000/todos/2
 Authorization: Bearer {{token}}
 Content-Type: application/json
 
@@ -45,5 +46,5 @@ Content-Type: application/json
 }
 
 ###
-DELETE http://localhost:3000/todos/3
+DELETE http://localhost:3000/todos/2
 Authorization: Bearer {{token}}
